@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+</head>
+
+<body>
+ <div class=" big-container">
+            <div class="container">
+                <h2 class="headerClass"> SIGNUP</h2>
+                <div><label>Username:</label></div>
+                <div ><input id="username" type="text" placeholder="Enter Username" name="username"
+                        onkeyup="usernameChecking()"></div>
+                <div class="errorMsg" id="errorName"></div>
+                <div>
+                    <label>Email:</label>
+                </div>
+                <div><input id="emailid" type="text" placeholder="Enter Email" name="email"
+                        onkeyup="usernameChecking()">
+                    <div class="errorMsg" id="emailerror"></div>
+                </div>
+                <div>
+                    <label>Password:</label>
+                </div>
+                 <!-- <div class="password">
+                        <input type="password" placeholder="Enter Password" id="password" onkeyup="usernameChecking()">
+                        <img src="eye-invisiable.png" onclick="pass()" class="pass-icon" id="pass-icon">
+                      </div> -->
+
+                      <input type="password" name="password"  required="" id="id_password" placeholder="Enter Password">
+                      <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+                <div class="errorMsg" id="passworderror"></div>
+                <div>
+                    <label>Confim Password:</label>
+                </div>
+                <div>
+                    <input id="confirmpassword" type="password" placeholder="Enter Password" name="psw"
+                        onkeyup="usernameChecking()">
+                </div>
+                <div class="errorMsg" id="confirmpassworderror"></div>
+                <div> <button id="submitBtnId" type="submit">Login</Sign Up>
+                </div>
+            </div>
+    </div>
+    <link rel="stylesheet" type="text/css" href="Sample.css">
+    <script src="Sample.js"></script>
+</body>
+</html>
